@@ -48,7 +48,7 @@ for (const carousel of carousels) {
             && !carousel.matches(":hover")
             && !carousel.contains(document.activeElement)
         ) {
-            timer = window.setInterval(() => showSlide(activeIndex + 1), 5000);
+            timer = window.setInterval(() => showSlide(activeIndex + 1), 3000);
         }
     };
 

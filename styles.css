@@ -444,6 +444,10 @@
             gap: 18px;
         }
 
+        .content-section .project-grid {
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+        }
+
         .project-card {
             min-height: 310px;
             display: flex;
@@ -478,6 +482,10 @@
 
         .project-feature > div:first-child p {
             max-width: 720px;
+        }
+
+        .project-financeflow .project-gallery {
+            grid-template-columns: minmax(0, 1fr);
         }
 
         .project-home-gallery {
@@ -525,7 +533,86 @@
             aspect-ratio: 16 / 9;
             overflow: hidden;
             border: 1px solid var(--line);
-            background: var(--sand-light);
+            background: #fff;
+        }
+
+        .project-home-carousel .carousel-viewport {
+            aspect-ratio: 1.8 / 1;
+        }
+
+        .project-financeflow-carousel .carousel-viewport {
+            aspect-ratio: 3 / 2;
+        }
+
+        .project-financeflow-carousel .carousel-viewport:has(.financeflow-pair-slide.is-active) {
+            aspect-ratio: 4 / 5;
+        }
+
+        .financeflow-pair-slide {
+            align-items: center;
+        }
+
+        .financeflow-screenshot-pair {
+            display: grid;
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+            grid-template-rows: auto minmax(0, 1fr);
+            align-items: center;
+            gap: 8px 18px;
+            width: 100%;
+            height: 100%;
+            box-sizing: border-box;
+            padding: 10px 16px;
+        }
+
+        .financeflow-screenshot-pair a {
+            min-width: 0;
+            display: grid;
+            justify-items: center;
+            gap: 6px;
+            color: var(--muted);
+            font-size: 0.72rem;
+            line-height: 1.4;
+            text-decoration: none;
+        }
+
+        .financeflow-mobile-heading {
+            grid-column: 1 / -1;
+            display: grid;
+            gap: 2px;
+            justify-self: center;
+            text-align: center;
+        }
+
+        .financeflow-mobile-heading > span {
+            color: var(--accent-dark);
+            font-size: 0.62rem;
+            font-weight: 700;
+            letter-spacing: 0.14em;
+        }
+
+        .financeflow-mobile-heading > strong {
+            color: var(--ink);
+            font-family: var(--serif);
+            font-size: 1rem;
+            font-weight: 400;
+        }
+
+        .financeflow-phone {
+            width: min(100%, 190px);
+            box-sizing: border-box;
+            padding: 7px;
+            border: 1px solid #323c4b;
+            border-radius: 22px;
+            background: #111b2b;
+            box-shadow: 0 8px 20px rgb(20 28 40 / 18%);
+        }
+
+        .financeflow-screenshot-pair img {
+            width: 100%;
+            height: auto;
+            overflow: hidden;
+            border-radius: 15px;
+            display: block;
         }
 
         .carousel-slide {
@@ -998,6 +1085,10 @@
                 grid-template-columns: 1fr;
             }
 
+            .content-section .project-grid {
+                grid-template-columns: repeat(2, minmax(0, 1fr));
+            }
+
             .trajectory-grid {
                 grid-template-columns: 1fr;
                 gap: 32px;
@@ -1103,6 +1194,10 @@
 
             .hero h1 {
                 font-size: clamp(2.7rem, 13vw, 3.4rem);
+            }
+
+            .content-section .project-grid {
+                grid-template-columns: 1fr;
             }
 
             .hero::before {
