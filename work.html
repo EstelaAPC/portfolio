@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#fff7fa">
+    <meta name="description" content="Projetos de Estela Argolo, desenvolvedora de software.">
+    <title>Projetos — Estela Argolo</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+    <header class="site-header">
+        <nav class="navigation container" aria-label="Navegação principal">
+            <a class="brand" href="index.html" aria-label="Estela Argolo, início">Estela.</a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">Sobre Mim</a></li>
+                <li><a href="work.html" aria-current="page">Portfólio</a></li>
+                <li><a href="contact.html">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container page-main" id="conteudo">
+        <header class="page-heading">
+            <p class="section-kicker">Seleção de projetos</p>
+            <h1>Meu portfólio</h1>
+            <p class="section-intro">Uma seleção dos projetos que melhor representam meu trabalho e minha forma de resolver problemas.</p>
+        </header>
+        <div class="project-grid">
+            <article class="project-card project-feature" id="netguard">
+                <div>
+                    <span class="project-index">01 / TCC · MONITORAMENTO DE REDES</span>
+                    <h2>NetGuard</h2>
+                    <p>Plataforma proativa de monitoramento e rastreabilidade de incidentes em redes corporativas. O sistema coleta métricas via ICMP, TCP e SNMP, apresenta dados em dashboards e ajuda a investigar incidentes com apoio de IA.</p>
+                </div>
+                <div class="project-gallery" aria-label="Imagens do projeto NetGuard">
+                    <figure class="project-figure">
+                        <a class="project-image-link" href="https://github.com/EstelaAPC/NETGUARD" target="_blank" rel="noopener noreferrer" aria-label="Ver o projeto NetGuard no GitHub (abre em nova aba)">
+                            <img src="assets/projects/netguard-architecture.png" alt="Diagrama da arquitetura do NetGuard com frontend React, API FastAPI, PostgreSQL, coleta de dados, Grafana e notificações">
+                        </a>
+                        <figcaption>Arquitetura geral</figcaption>
+                    </figure>
+                    <figure class="project-figure">
+                        <a class="project-image-link" href="https://github.com/EstelaAPC/NETGUARD" target="_blank" rel="noopener noreferrer" aria-label="Ver os resultados do NetGuard no GitHub (abre em nova aba)">
+                            <img src="assets/projects/netguard-results.png" alt="Resultados do NetGuard: coleta contínua, detecção de incidentes e notificações pelo Telegram">
+                        </a>
+                        <figcaption>Monitoramento, incidentes e alertas</figcaption>
+                    </figure>
+                </div>
+                <div class="project-tags" aria-label="Tecnologias e recursos do NetGuard">
+                    <span>Python</span>
+                    <span>FastAPI</span>
+                    <span>React</span>
+                    <span>PostgreSQL</span>
+                    <span>TimescaleDB</span>
+                    <span>Grafana</span>
+                    <span>Docker</span>
+                    <span>ICMP · TCP · SNMP</span>
+                    <span>IA</span>
+                </div>
+                <a class="button project-github-link" href="https://github.com/EstelaAPC/NETGUARD" target="_blank" rel="noopener noreferrer">Ver projeto no GitHub <span aria-hidden="true">↗</span></a>
+            </article>
+            <article class="project-card project-feature project-nexora" id="nexora">
+                <div>
+                    <span class="project-index">02 / DESIGN SYSTEM</span>
+                    <h2>Nexora Design System</h2>
+                    <p>Biblioteca de interface independente de framework, construída com Web Components, Lit e TypeScript. O Nexora oferece componentes reutilizáveis, Shadow DOM, design tokens e propriedades CSS para criar interfaces consistentes e acessíveis em diferentes aplicações.</p>
+                </div>
+                <div class="project-gallery" aria-label="Prévia do Nexora Design System">
+                    <div class="project-carousel project-detail-carousel" data-carousel aria-label="Imagens do Nexora Design System">
+                        <div class="carousel-viewport" aria-live="off">
+                            <figure class="carousel-slide is-active">
+                                <a href="https://estelaapc.github.io/nexora-design-system-docs/" target="_blank" rel="noopener noreferrer" aria-label="Abrir documentação do Nexora Design System (abre em nova aba)">
+                                    <img src="assets/projects/nexora-preview.png" alt="Página inicial da documentação do Nexora com prévia interativa de componentes">
+                                </a>
+                                <figcaption>Conheça a documentação e os componentes</figcaption>
+                            </figure>
+                            <figure class="carousel-slide" aria-hidden="true" inert>
+                                <a href="https://estelaapc.github.io/nexora-design-system-docs/" target="_blank" rel="noopener noreferrer" tabindex="-1" aria-label="Abrir exemplo de espaçamento do Nexora (abre em nova aba)">
+                                    <img src="assets/projects/nexora-spacing.png" alt="Documentação da escala de espaçamento do Nexora">
+                                </a>
+                                <figcaption>Tokens de espaçamento</figcaption>
+                            </figure>
+                            <figure class="carousel-slide" aria-hidden="true" inert>
+                                <a href="https://estelaapc.github.io/nexora-design-system-docs/" target="_blank" rel="noopener noreferrer" tabindex="-1" aria-label="Abrir catálogo de ícones do Nexora (abre em nova aba)">
+                                    <img src="assets/projects/nexora-icons.png" alt="Catálogo de ícones disponíveis no Nexora">
+                                </a>
+                                <figcaption>Ícones disponíveis</figcaption>
+                            </figure>
+                            <figure class="carousel-slide" aria-hidden="true" inert>
+                                <a href="https://estelaapc.github.io/nexora-design-system-docs/" target="_blank" rel="noopener noreferrer" tabindex="-1" aria-label="Abrir demonstração de botões do Nexora (abre em nova aba)">
+                                    <img src="assets/projects/nexora-button.png" alt="Demonstração das variações do componente de botão do Nexora">
+                                </a>
+                                <figcaption>Componente Button</figcaption>
+                            </figure>
+                            <figure class="carousel-slide" aria-hidden="true" inert>
+                                <a href="https://estelaapc.github.io/nexora-design-system-docs/" target="_blank" rel="noopener noreferrer" tabindex="-1" aria-label="Abrir tokens de espaçamento do Nexora (abre em nova aba)">
+                                    <img src="assets/projects/nexora-spacing-tokens.png" alt="Visualização de tokens de espaçamento do Nexora">
+                                </a>
+                                <figcaption>Escala de design tokens</figcaption>
+                            </figure>
+                        </div>
+                        <div class="carousel-controls">
+                            <div class="carousel-indicators" role="group" aria-label="Escolher imagem do Nexora">
+                                <button class="carousel-dot is-active" type="button" data-slide-to="0" aria-label="Mostrar imagem 1 de 5" aria-current="true"></button>
+                                <button class="carousel-dot" type="button" data-slide-to="1" aria-label="Mostrar imagem 2 de 5"></button>
+                                <button class="carousel-dot" type="button" data-slide-to="2" aria-label="Mostrar imagem 3 de 5"></button>
+                                <button class="carousel-dot" type="button" data-slide-to="3" aria-label="Mostrar imagem 4 de 5"></button>
+                                <button class="carousel-dot" type="button" data-slide-to="4" aria-label="Mostrar imagem 5 de 5"></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-tags" aria-label="Tecnologias do projeto">
+                    <span>Web Components</span>
+                    <span>Lit</span>
+                    <span>TypeScript</span>
+                    <span>Shadow DOM</span>
+                    <span>NPM</span>
+                    <span>Design Tokens</span>
+                    <span>CSS Custom Properties</span>
+                    <span>Acessibilidade</span>
+                </div>
+                <div class="project-actions" aria-label="Links do Nexora Design System">
+                    <a class="button" href="https://estelaapc.github.io/nexora-design-system-docs/" target="_blank" rel="noopener noreferrer">Ver demonstração <span aria-hidden="true">↗</span></a>
+                    <a class="button button-secondary" href="https://github.com/EstelaAPC/nexora-design-system" target="_blank" rel="noopener noreferrer">Ver código no GitHub <span aria-hidden="true">↗</span></a>
+                    <a class="text-link" href="https://www.npmjs.com/org/nexora-ds" target="_blank" rel="noopener noreferrer">Pacotes no NPM <span aria-hidden="true">↗</span></a>
+                </div>
+            </article>
+        </div>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer-inner">
+            <p>© 2026 Estela Argolo</p>
+        </div>
+    </footer>
+    <script src="carousel.js" defer></script>
+</body>
+</html>
