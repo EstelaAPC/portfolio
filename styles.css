@@ -705,7 +705,7 @@
             margin-top: 25px;
         }
 
-        .project-tags span, .skill-list span {
+        .project-tags > span {
             padding: 7px 10px;
             border: 1px solid var(--line);
             border-radius: 2px;
@@ -798,16 +798,70 @@
         }
 
         .skill-list {
-            display: flex;
-            flex-wrap: wrap;
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(58px, 1fr));
             gap: 10px;
-            margin-top: 30px;
+            margin-top: 24px;
         }
 
-        .skill-list span {
-            padding: 10px 14px;
-            background: var(--surface);
-            font-size: 0.82rem;
+        .skill-item {
+            position: relative;
+            min-width: 0;
+            aspect-ratio: 1;
+            display: grid;
+            place-items: center;
+            border: 1px solid var(--line);
+            border-radius: 4px;
+            background: linear-gradient(145deg, var(--surface), #fcf1f5);
+            transition: transform 160ms ease, border-color 160ms ease, box-shadow 160ms ease;
+        }
+
+        .skill-item:hover,
+        .skill-item:focus-visible {
+            transform: translateY(-2px);
+            border-color: var(--accent-strong);
+            box-shadow: 0 6px 16px rgb(169 79 116 / 10%);
+        }
+
+        .skill-item:focus-visible {
+            outline: 2px solid var(--accent-dark);
+            outline-offset: 3px;
+        }
+
+        .skill-item::after {
+            position: absolute;
+            bottom: calc(100% + 8px);
+            left: 50%;
+            z-index: 2;
+            width: max-content;
+            max-width: min(180px, 70vw);
+            padding: 7px 10px;
+            border-radius: 3px;
+            background: var(--ink);
+            color: #fff;
+            content: attr(data-tooltip);
+            font-size: 0.72rem;
+            line-height: 1.3;
+            text-align: center;
+            white-space: normal;
+            opacity: 0;
+            pointer-events: none;
+            transform: translate(-50%, 4px);
+            transition: opacity 140ms ease, transform 140ms ease;
+        }
+
+        .skill-item:hover::after,
+        .skill-item:focus-visible::after {
+            opacity: 1;
+            transform: translate(-50%, 0);
+        }
+
+        .skill-icon {
+            width: 34px;
+            height: 34px;
+            display: block;
+            object-fit: contain;
+            color: var(--accent-dark);
         }
 
         .contact-section {
