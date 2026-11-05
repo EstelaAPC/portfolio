@@ -7,6 +7,7 @@
     <meta name="description" content="Entre em contato com Estela Argolo.">
     <title>Contato — Estela Argolo</title>
     <link rel="stylesheet" href="styles.css">
+    <script src="translations.js"></script>
 </head>
 <body>
     <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
@@ -14,11 +15,16 @@
         <nav class="navigation container" aria-label="Navegação principal">
             <a class="brand" href="index.html" aria-label="Estela Argolo, início">Estela.</a>
             <ul class="nav-links">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">Sobre Mim</a></li>
-                <li><a href="work.html">Portfólio</a></li>
-                <li><a href="contact.html" aria-current="page">Contato</a></li>
+                <li><a href="index.html" data-i18n="navHome">Home</a></li>
+                <li><a href="about.html" data-i18n="navAbout">Sobre Mim</a></li>
+                <li><a href="work.html" data-i18n="navWork">Portfólio</a></li>
+                <li><a href="contact.html" aria-current="page" data-i18n="navContact">Contato</a></li>
             </ul>
+            <div class="language-selector">
+                <a href="#" class="lang-link active" data-lang="pt">PT</a>
+                <span>/</span>
+                <a href="#" class="lang-link" data-lang="en">EN</a>
+            </div>
         </nav>
     </header>
 
@@ -26,13 +32,13 @@
         <section class="contact-section" aria-labelledby="contact-title">
             <div class="container contact-layout">
                 <div>
-                    <p class="section-kicker">Vamos conversar?</p>
-                    <h1 id="contact-title">Vamos construir algo juntos.</h1>
-                    <p>Tem uma ideia, um projeto ou uma oportunidade? Você pode me encontrar pelo LinkedIn ou acompanhar meu trabalho no GitHub.</p>
+                    <p class="section-kicker" data-i18n="contactLetsChat">Vamos conversar?</p>
+                    <h1 id="contact-title" data-i18n="contactTitle">Vamos construir algo juntos.</h1>
+                    <p data-i18n="contactDescription">Tem uma ideia, um projeto ou uma oportunidade? Você pode me encontrar pelo LinkedIn ou acompanhar meu trabalho no GitHub.</p>
                 </div>
                 <div class="contact-links" aria-label="Canais de contato">
-                    <a class="button button-secondary" href="https://www.linkedin.com/in/estela-argolo-paraiso-carvalho-788097130/" target="_blank" rel="noopener noreferrer">LinkedIn <span aria-hidden="true">↗</span></a>
-                    <a class="button button-secondary" href="https://github.com/EstelaAPC" target="_blank" rel="noopener noreferrer">GitHub <span aria-hidden="true">↗</span></a>
+                    <a class="button button-secondary" href="https://www.linkedin.com/in/estela-argolo-paraiso-carvalho-788097130/" target="_blank" rel="noopener noreferrer"><span data-i18n="linkedinLink">LinkedIn ↗</span></a>
+                    <a class="button button-secondary" href="https://github.com/EstelaAPC" target="_blank" rel="noopener noreferrer"><span data-i18n="githubLink">GitHub ↗</span></a>
                 </div>
             </div>
         </section>
@@ -40,7 +46,7 @@
 
     <footer class="site-footer">
         <div class="container footer-inner">
-            <p>© 2026 Estela Argolo</p>
+            <p data-i18n="copyright">© 2026 Estela Argolo</p>
         </div>
     </footer>
 </body>

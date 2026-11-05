@@ -41,7 +41,29 @@ const translations = {
         letsTalk: 'Vamos conversar?',
         buildTogether: 'Vamos construir algo juntos.',
         getInTouch: 'Entre em contato ↗',
-        copyright: '© 2026 Estela Argolo'
+        copyright: '© 2026 Estela Argolo',
+        // Página About
+        aboutMyStory: 'Minha história',
+        aboutTitle: 'Sobre mim',
+        aboutCopy: 'Engenheira da Computação pela FESA, com experiência em desenvolvimento Full Stack e Design Systems. No Banco Safra, atuo com aplicações internas, componentes reutilizáveis e integração de APIs; anteriormente, desenvolvi soluções C#/.NET na Termomecânica.',
+        educationDegree: 'Engenharia de Computação',
+        educationSchool: 'FESA · 2022–2026',
+        company1: 'Banco Safra',
+        company1Role: 'Estagiária de Desenvolvimento · TI Design · Set/2024–atual',
+        company2: 'Termomecânica',
+        company2Role: 'Estagiária de Desenvolvimento Full Stack · Mai/2023–Ago/2024',
+        skills: 'Habilidades',
+        // Página Work
+        workSelection: 'Seleção de projetos',
+        workTitle: 'Meu portfólio',
+        workIntro: 'Uma seleção dos projetos que melhor representam meu trabalho e minha forma de resolver problemas.',
+        // Página Contact
+        contactLetsChat: 'Vamos conversar?',
+        contactTitle: 'Vamos construir algo juntos.',
+        contactDescription: 'Tem uma ideia, um projeto ou uma oportunidade? Você pode me encontrar pelo LinkedIn ou acompanhar meu trabalho no GitHub.',
+        contactChannels: 'Canais de contato',
+        linkedinLink: 'LinkedIn ↗',
+        githubLink: 'GitHub ↗'
     },
     en: {
         loading: 'Loading...',
@@ -84,7 +106,29 @@ const translations = {
         letsTalk: 'Let\'s talk?',
         buildTogether: 'Let\'s build something together.',
         getInTouch: 'Get in touch ↗',
-        copyright: '© 2026 Estela Argolo'
+        copyright: '© 2026 Estela Argolo',
+        // About page
+        aboutMyStory: 'My story',
+        aboutTitle: 'About me',
+        aboutCopy: 'Computer Engineer from FESA, with experience in Full Stack development and Design Systems. At Banco Safra, I work with internal applications, reusable components and API integration; previously, I developed C#/.NET solutions at Termomecânica.',
+        educationDegree: 'Computer Engineering',
+        educationSchool: 'FESA · 2022–2026',
+        company1: 'Banco Safra',
+        company1Role: 'Development Intern · TI Design · Sep/2024–current',
+        company2: 'Termomecânica',
+        company2Role: 'Full Stack Development Intern · May/2023–Aug/2024',
+        skills: 'Skills',
+        // Work page
+        workSelection: 'Project selection',
+        workTitle: 'My portfolio',
+        workIntro: 'A selection of projects that best represent my work and how I solve problems.',
+        // Contact page
+        contactLetsChat: 'Let\'s talk?',
+        contactTitle: 'Let\'s build something together.',
+        contactDescription: 'Do you have an idea, a project or an opportunity? You can find me on LinkedIn or follow my work on GitHub.',
+        contactChannels: 'Contact channels',
+        linkedinLink: 'LinkedIn ↗',
+        githubLink: 'GitHub ↗'
     }
 };
 

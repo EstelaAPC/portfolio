@@ -7,6 +7,7 @@
     <meta name="description" content="Projetos de Estela Argolo, desenvolvedora de software.">
     <title>Projetos — Estela Argolo</title>
     <link rel="stylesheet" href="styles.css">
+    <script src="translations.js"></script>
 </head>
 <body>
     <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
@@ -14,19 +15,24 @@
         <nav class="navigation container" aria-label="Navegação principal">
             <a class="brand" href="index.html" aria-label="Estela Argolo, início">Estela.</a>
             <ul class="nav-links">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">Sobre Mim</a></li>
-                <li><a href="work.html" aria-current="page">Portfólio</a></li>
-                <li><a href="contact.html">Contato</a></li>
+                <li><a href="index.html" data-i18n="navHome">Home</a></li>
+                <li><a href="about.html" data-i18n="navAbout">Sobre Mim</a></li>
+                <li><a href="work.html" aria-current="page" data-i18n="navWork">Portfólio</a></li>
+                <li><a href="contact.html" data-i18n="navContact">Contato</a></li>
             </ul>
+            <div class="language-selector">
+                <a href="#" class="lang-link active" data-lang="pt">PT</a>
+                <span>/</span>
+                <a href="#" class="lang-link" data-lang="en">EN</a>
+            </div>
         </nav>
     </header>
 
     <main class="container page-main" id="conteudo">
         <header class="page-heading">
-            <p class="section-kicker">Seleção de projetos</p>
-            <h1>Meu portfólio</h1>
-            <p class="section-intro">Uma seleção dos projetos que melhor representam meu trabalho e minha forma de resolver problemas.</p>
+            <p class="section-kicker" data-i18n="workSelection">Seleção de projetos</p>
+            <h1 data-i18n="workTitle">Meu portfólio</h1>
+            <p class="section-intro" data-i18n="workIntro">Uma seleção dos projetos que melhor representam meu trabalho e minha forma de resolver problemas.</p>
         </header>
         <div class="project-grid">
             <article class="project-card project-feature project-financeflow" id="financeflow">
