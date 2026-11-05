@@ -24,7 +24,24 @@ const translations = {
         recentProjects: 'Projetos recentes',
         viewPortfolio: 'Ver portfólio completo ↗',
         accessApp: 'Acessar aplicação ↗',
-        viewGithub: 'GitHub ↗'
+        viewGithub: 'GitHub ↗',
+        financeflowTitle: 'FinanceFlow',
+        financeflowDesc: 'Plataforma de gestão financeira com Angular e .NET, usando AWS Lambda, Amazon DynamoDB e AWS SDK. Aplicação cloud-native publicada na AWS.',
+        orquestraTitle: 'Orquestra',
+        orquestraDesc: 'API REST para automatizar processos empresariais, integrar serviços e acompanhar cada etapa das solicitações.',
+        netguardTitle: 'NetGuard',
+        netguardDesc: 'Plataforma proativa para monitorar redes corporativas, detectar incidentes e acompanhar métricas.',
+        nexoraTitle: 'Nexora Design System',
+        nexoraDesc: 'Biblioteca de Web Components reutilizáveis, criada com Lit e TypeScript para interfaces acessíveis e consistentes.',
+        codequestTitle: 'CodeQuest',
+        codequestDesc: 'Um RPG educativo que transforma conceitos de programação em desafios interativos, construções criativas e aventuras guiadas pelo robô Byte.',
+        playNow: 'Jogar agora ↗',
+        viewDocs: 'Ver documentação ↗',
+        viewGithubLink: 'Ver no GitHub ↗',
+        letsTalk: 'Vamos conversar?',
+        buildTogether: 'Vamos construir algo juntos.',
+        getInTouch: 'Entre em contato ↗',
+        copyright: '© 2026 Estela Argolo'
     },
     en: {
         loading: 'Loading...',
@@ -50,7 +67,24 @@ const translations = {
         recentProjects: 'Recent Projects',
         viewPortfolio: 'View complete portfolio ↗',
         accessApp: 'Access application ↗',
-        viewGithub: 'GitHub ↗'
+        viewGithub: 'GitHub ↗',
+        financeflowTitle: 'FinanceFlow',
+        financeflowDesc: 'Financial management platform with Angular and .NET, using AWS Lambda, Amazon DynamoDB and AWS SDK. Cloud-native application published on AWS.',
+        orquestraTitle: 'Orquestra',
+        orquestraDesc: 'REST API to automate business processes, integrate services and track each step of requests.',
+        netguardTitle: 'NetGuard',
+        netguardDesc: 'Proactive platform to monitor corporate networks, detect incidents and track metrics.',
+        nexoraTitle: 'Nexora Design System',
+        nexoraDesc: 'Reusable Web Components library, created with Lit and TypeScript for accessible and consistent interfaces.',
+        codequestTitle: 'CodeQuest',
+        codequestDesc: 'An educational RPG that transforms programming concepts into interactive challenges, creative builds and adventures guided by the robot Byte.',
+        playNow: 'Play now ↗',
+        viewDocs: 'View documentation ↗',
+        viewGithubLink: 'View on GitHub ↗',
+        letsTalk: 'Let\'s talk?',
+        buildTogether: 'Let\'s build something together.',
+        getInTouch: 'Get in touch ↗',
+        copyright: '© 2026 Estela Argolo'
     }
 };
 
