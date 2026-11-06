@@ -7,8 +7,14 @@
     <meta name="description" content="Portfólio de Estela Argolo, desenvolvedora de software.">
     <title>Estela Argolo — Desenvolvedora de Software</title>
     <link rel="stylesheet" href="styles.css">
+    <script src="loader.js"></script>
+    <script src="language.js" defer></script>
 </head>
 <body>
+    <div class="page-loader" data-page-loader role="status" aria-label="Carregando página" aria-live="polite">
+        <img class="page-loader-gif" src="assets/animacao-digitacao-escritorio.gif" alt="">
+        <span class="page-loader-dots" aria-hidden="true"><span></span><span></span><span></span></span>
+    </div>
     <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
     <header class="site-header">
         <nav class="navigation container" aria-label="Navegação principal">
@@ -19,6 +25,11 @@
                 <li><a href="work.html">Portfólio</a></li>
                 <li><a href="contact.html">Contato</a></li>
             </ul>
+            <div class="language-switch" role="group" aria-label="Idioma">
+                <button type="button" data-language="pt" aria-pressed="true">PT</button>
+                <span aria-hidden="true">/</span>
+                <button type="button" data-language="en" aria-pressed="false">EN</button>
+            </div>
         </nav>
     </header>
 
