@@ -41,7 +41,7 @@
             align-items: center;
             justify-content: center;
             gap: 8px;
-            background: var(--paper);
+            background: #fefefe;
             opacity: 1;
             visibility: visible;
             transition: opacity 240ms ease, visibility 240ms ease;
@@ -58,8 +58,7 @@
             height: auto;
             object-fit: contain;
             clip-path: inset(14px);
-            border-radius: 14px;
-            background: #fff;
+            background: #fefefe;
         }
 
         .page-loader-dots {
@@ -1765,12 +1764,11 @@
         }
 
         html[data-theme="dark"] .page-loader {
-            background: radial-gradient(circle, #21152b 0%, var(--paper) 68%);
+            background: #250a2d;
         }
 
         html[data-theme="dark"] .page-loader-gif {
-            background: #190c21;
-            box-shadow: 0 16px 48px rgb(0 0 0 / 32%);
+            background: #250a2d;
         }
 
         html[data-theme="dark"] .soft-section {
