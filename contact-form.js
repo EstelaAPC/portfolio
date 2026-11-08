@@ -9,9 +9,12 @@ emailForm?.addEventListener("submit", (event) => {
     const subject = formData.get("subject").toString().trim();
     const message = formData.get("message").toString().trim();
     const body = `Nome: ${name}\nE-mail: ${senderEmail}\n\n${message}`;
-    const mailto = new URL("mailto:estela.argolo@gmail.com");
+    const composeUrl = new URL("https://mail.google.com/mail/");
 
-    mailto.searchParams.set("subject", subject);
-    mailto.searchParams.set("body", body);
-    window.location.href = mailto.toString();
+    composeUrl.searchParams.set("view", "cm");
+    composeUrl.searchParams.set("fs", "1");
+    composeUrl.searchParams.set("to", "estela.argolo@gmail.com");
+    composeUrl.searchParams.set("su", subject);
+    composeUrl.searchParams.set("body", body);
+    window.open(composeUrl.toString(), "_blank", "noopener,noreferrer");
 });

@@ -9,7 +9,7 @@ const translations = {
     "Carregando página": "Loading page",
     "Desenvolvedora de software": "Software Developer",
     "Conheça meu trabalho": "Explore my work",
-    "Baixar currículo": "Download résumé (Portuguese version)",
+    "Baixar currículo": "Download CV",
     "Redes sociais": "Social media",
     "GitHub (abre em nova aba)": "GitHub (opens in a new tab)",
     "LinkedIn (abre em nova aba)": "LinkedIn (opens in a new tab)",
@@ -90,7 +90,7 @@ const translations = {
     "Assunto": "Subject",
     "Mensagem": "Message",
     "Abrir e-mail para enviar": "Open email to send",
-    "Seu aplicativo de e-mail será aberto com a mensagem preenchida para você revisar e enviar.": "Your email app will open with the message filled in for you to review and send.",
+    "O Gmail será aberto em uma nova aba com a mensagem preenchida para você revisar e enviar.": "Gmail will open in a new tab with the message filled in for you to review and send.",
     "© 2026 Estela Argolo": "© 2026 Estela Argolo",
     "Minha história": "My Story",
     "Sobre mim": "About Me",
@@ -295,6 +295,18 @@ const applyLanguage = (language) => {
         const isSelected = button.dataset.language === language;
         button.setAttribute("aria-pressed", String(isSelected));
     });
+
+    const themeToggle = document.querySelector("[data-theme-toggle]");
+
+    if (themeToggle) {
+        const isDark = document.documentElement.dataset.theme === "dark";
+        const label = isEnglish
+            ? isDark ? "Switch to light mode" : "Switch to dark mode"
+            : isDark ? "Ativar modo claro" : "Ativar modo escuro";
+
+        themeToggle.setAttribute("aria-label", label);
+        themeToggle.setAttribute("title", label);
+    }
 };
 
 const originalTextTitle = document.title;
