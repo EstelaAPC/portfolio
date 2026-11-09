@@ -6,8 +6,10 @@
     <meta name="theme-color" content="#fff7fa">
     <meta name="description" content="Conheça a trajetória, experiência e habilidades de Estela Argolo.">
     <title>Sobre — Estela Argolo</title>
+    <script src="theme.js"></script>
     <link rel="stylesheet" href="styles.css">
-    <script src="translations.js"></script>
+    <script src="language.js" defer></script>
+    <script src="analytics.js" defer></script>
 </head>
 <body>
     <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
@@ -15,48 +17,54 @@
         <nav class="navigation container" aria-label="Navegação principal">
             <a class="brand" href="index.html" aria-label="Estela Argolo, início">Estela.</a>
             <ul class="nav-links">
-                <li><a href="index.html" data-i18n="navHome">Home</a></li>
-                <li><a href="about.html" aria-current="page" data-i18n="navAbout">Sobre Mim</a></li>
-                <li><a href="work.html" data-i18n="navWork">Portfólio</a></li>
-                <li><a href="contact.html" data-i18n="navContact">Contato</a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html" aria-current="page">Sobre Mim</a></li>
+                <li><a href="work.html">Portfólio</a></li>
+                <li><a href="contact.html">Contato</a></li>
             </ul>
-            <div class="language-selector">
-                <a href="#" class="lang-link active" data-lang="pt">PT</a>
-                <span>/</span>
-                <a href="#" class="lang-link" data-lang="en">EN</a>
+            <div class="header-tools">
+                <button class="theme-toggle" type="button" data-theme-toggle aria-label="Ativar modo escuro" title="Ativar modo escuro">
+                    <svg class="theme-icon theme-icon-moon" aria-hidden="true" viewBox="0 0 24 24"><path d="M20.2 15.4A8.6 8.6 0 0 1 8.6 3.8 8.7 8.7 0 1 0 20.2 15.4Z"/></svg>
+                    <svg class="theme-icon theme-icon-sun" aria-hidden="true" viewBox="0 0 24 24"><circle cx="12" cy="12" r="4"/><path d="M12 2v2m0 16v2M4.93 4.93l1.42 1.42m11.3 11.3 1.42 1.42M2 12h2m16 0h2M4.93 19.07l1.42-1.42m11.3-11.3 1.42-1.42"/></svg>
+                </button>
+                <div class="language-switch" role="group" aria-label="Idioma">
+                    <button type="button" data-language="pt" aria-pressed="true">PT</button>
+                    <span aria-hidden="true">/</span>
+                    <button type="button" data-language="en" aria-pressed="false">EN</button>
+                </div>
             </div>
         </nav>
     </header>
 
     <main class="container page-main" id="conteudo">
         <header class="page-heading">
-            <p class="section-kicker" data-i18n="aboutMyStory">Minha história</p>
-            <h1 data-i18n="aboutTitle">Sobre mim</h1>
+            <p class="section-kicker">Minha história</p>
+            <h1>Sobre mim</h1>
         </header>
         <section class="about-layout" aria-labelledby="about-title">
             <h2 class="visually-hidden" id="about-title">Conheça Estela</h2>
             <img class="about-photo" src="assets/sobremim.jpeg" alt="Estela sentada em uma poltrona, vestindo blazer preto e calça rosa">
             <div class="about-details">
-                <p class="about-copy" data-i18n="aboutCopy">Engenheira da Computação pela FESA, com experiência em desenvolvimento Full Stack e Design Systems. No Banco Safra, atuo com aplicações internas, componentes reutilizáveis e integração de APIs; anteriormente, desenvolvi soluções C#/.NET na Termomecânica.</p>
-                <h2 class="subheading" data-i18n="formation">Formação</h2>
+                <p class="about-copy">Engenheira da Computação pela FESA, com experiência em desenvolvimento Full Stack e Design Systems. No Banco Safra, atuo com aplicações internas, componentes reutilizáveis e integração de APIs; anteriormente, desenvolvi soluções C#/.NET na Termomecânica.</p>
+                <h2 class="subheading">Formação</h2>
                 <div class="experience-list">
                     <article class="experience-row">
-                        <h3 data-i18n="educationDegree">Engenharia de Computação</h3>
-                        <p data-i18n="educationSchool">FESA · 2022–2026</p>
+                        <h3>Engenharia de Computação</h3>
+                        <p>FESA · 2022–2026</p>
                     </article>
                 </div>
-                <h2 class="subheading" data-i18n="professionalExperience">Experiência profissional</h2>
+                <h2 class="subheading">Experiência profissional</h2>
                 <div class="experience-list">
                     <article class="experience-row">
-                        <h3 data-i18n="company1">Banco Safra</h3>
-                        <p data-i18n="company1Role">Estagiária de Desenvolvimento · TI Design · Set/2024–atual</p>
+                        <h3>Banco Safra</h3>
+                        <p>Estagiária de Desenvolvimento · TI Design · Set/2024–atual</p>
                     </article>
                     <article class="experience-row">
-                        <h3 data-i18n="company2">Termomecânica</h3>
-                        <p data-i18n="company2Role">Estagiária de Desenvolvimento Full Stack · Mai/2023–Ago/2024</p>
+                        <h3>Termomecânica</h3>
+                        <p>Estagiária de Desenvolvimento Full Stack · Mai/2023–Ago/2024</p>
                     </article>
                 </div>
-                <h2 class="subheading" data-i18n="skills">Habilidades</h2>
+                <h2 class="subheading">Habilidades</h2>
                 <div class="skill-list" role="list" aria-label="Habilidades técnicas">
                     <span class="skill-item" role="listitem" tabindex="0" aria-label="C#" data-tooltip="C#"><img class="skill-icon" src="assets/skills/csharp.svg" alt=""></span>
                     <span class="skill-item" role="listitem" tabindex="0" aria-label=".NET" data-tooltip=".NET"><img class="skill-icon" src="assets/skills/dotnet.svg" alt=""></span>
@@ -84,7 +92,7 @@
 
     <footer class="site-footer">
         <div class="container footer-inner">
-            <p data-i18n="copyright">© 2026 Estela Argolo</p>
+            <p>© 2026 Estela Argolo</p>
         </div>
     </footer>
 </body>
